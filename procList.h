@@ -76,7 +76,7 @@ bool sortReady(Process a, Process b);
 //Funkcja usuwajaca wykonane procesy z programu
 void terminateProc(long time, std::list<Process> *x, long *counter, std::ofstream *file,std::vector<int> *proc);
 //Funkcja przydzielajaca procesory oraz przenoszaca proces z "ready" na "exec"
-void runProc(long time, std::list<long> *finishTimes, std::list<Process> *x, std::list<Process> *r, long *counter,std::vector<int> *proc, std::list<Analysis>& an);
+void runProc(long time, std::list<long> *finishTimes, std::list<Process> *x, std::list<Process> *r, long *counter,std::vector<int> *proc, myList& an);
 
 void printAnalysis(std::list<Analysis> a);
 

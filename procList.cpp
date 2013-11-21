@@ -174,7 +174,7 @@ void terminateProc(long time, list<Process> *x, long *counter,ofstream *file,vec
 }
 
 //Funkcja przydzielajaca procesory procesom oraz przenoszaca je z listy "ready" na liste "exec"
-void runProc(long time, list<long> *finishTimes, list<Process> *x, list<Process> *r, long *counter,vector<int> *proc, list<Analysis>& an)
+void runProc(long time, list<long> *finishTimes, list<Process> *x, list<Process> *r, long *counter,vector<int> *proc, myList& an)
 {
     //list<Process> tmp = *r;
     for(list<Process>::iterator it = r->begin(); it != r->end() && counter != 0 && !(r->empty());)
@@ -207,7 +207,7 @@ void runProc(long time, list<long> *finishTimes, list<Process> *x, list<Process>
                 if(r->empty() || *counter == 0) Analysis::succeed++;
                 else
                 {
-                    an.push_back(Analysis(time, *counter, *r));
+                    an.push(Analysis(time, *counter, *r));
                     Analysis::unsucceed++;
                 }
 

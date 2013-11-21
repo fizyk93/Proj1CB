@@ -29,7 +29,8 @@ int main(int argc, char* argv[])
     list<Process> readyList, execList;
     list<Process> tmp = processList;
 
-    list<Analysis> analysis;
+//    list<Analysis> analysis;
+    myList analysis;
 
     list<long> finishTimes;
 
@@ -114,6 +115,6 @@ int main(int argc, char* argv[])
     processors.clear();
     tmp.clear();
     cout << "Czas wykonania programu: " << (float)(e-s)/CLOCKS_PER_SEC << "s" << endl;
-    printAnalysis(analysis);
+    analysis.print();
     return 0;
 }
