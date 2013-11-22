@@ -1,0 +1,48 @@
+# depslib dependency file v1.0
+1385081283 source:e:\ok\proj1cb\main.cpp
+	<iostream>
+	<list>
+	<fstream>
+	<ctime>
+	<cstdlib>
+	<string>
+	<sstream>
+	"Instance.h"
+
+1385080301 e:\ok\proj1cb\proclist.h
+
+1385080920 source:e:\ok\proj1cb\proclist.cpp
+
+1385080277 source:e:\ok\proj1cb\analysis.cpp
+	"Analysis.h"
+	<cstdio>
+	<list>
+
+1385081073 e:\ok\proj1cb\analysis.h
+	<list>
+	"Process.h"
+	<iostream>
+
+1385081041 e:\ok\proj1cb\process.h
+	<vector>
+
+1385080691 e:\ok\proj1cb\instance.h
+	<vector>
+	<list>
+	<fstream>
+	<ctime>
+	<iostream>
+	"procList.h"
+	"Analysis.h"
+	"myList.h"
+	"Process.h"
+
+1385081148 e:\ok\proj1cb\mylist.h
+	"Analysis.h"
+
+1385081130 source:e:\ok\proj1cb\mylist.cpp
+	"myList.h"
+
+1385080195 source:e:\ok\proj1cb\process.cpp
+	"Process.h"
+
